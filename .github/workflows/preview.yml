@@ -1,0 +1,42 @@
+name: Deploy PR previews
+concurrency: preview-${{ github.ref }}
+
+on:
+  pull_request:
+    types:
+      - opened
+      - reopened
+      - synchronize
+      - closed
+permissions:
+   id-token: write # This is required for requesting the JWT
+   contents: write # This is required for actions/checkout
+   pages: write
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    strategy:
+      matrix:
+        node-version: [22.x]
+
+    steps:
+    - uses: actions/checkout@v4
+
+    - name: Use Node.js ${{ matrix.node-version }}
+      uses: actions/setup-node@v4
+      with:
+        node-version: ${{ matrix.node-version }}
+
+    - name: Build
+      run: |
+        npm install
+        gulp
+    - uses: rossjrw/pr-preview-action@v1
+      with:
+          source-dir: .
+          preview-branch: gh-pages
+          umbrella-dir: pr-preview
+          action: auto
+
+          
