@@ -215,7 +215,7 @@ $(document).ready(function () {
         $('#alert-wrapper').html(alert_markup('info', '<strong>Just a sec!</strong> We are saving your details.'));
 
 
-            $.post('https://.../exec', data)
+            $.post('https://script.google.com/macros/s/AKfycbwBwgJL7iNU7eWipsw4vwI9FxieGplJV1tEEK-WoamWe_cRx7FLxdiEA2RT-kbz6Ephdw/exec', data)
                 .done(function (data) {
                     console.log(data);
                     if (data.result === "error") {
