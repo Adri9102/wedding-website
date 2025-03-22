@@ -184,10 +184,10 @@ $(document).ready(function () {
         },
         data: {
             // Event title
-            title: "Jakub and Kinga's Wedding",
+            title: "Ślub Kingi i Jakuba",
 
             // Event start date
-            start: new Date('Aug 9, 2025 10:00'),
+            start: new Date('Aug 9, 2025 15:00'),
 
             // Event duration (IN MINUTES)
             // duration: 120,
@@ -251,19 +251,6 @@ function initMap() {
     });
 }
 
-function initBBSRMap() {
-    var la_fiesta = {lat: 20.305826, lng: 85.85480189999998};
-    var map = new google.maps.Map(document.getElementById('map-canvas'), {
-        zoom: 15,
-        center: la_fiesta,
-        scrollwheel: false
-    });
-
-    var marker = new google.maps.Marker({
-        position: la_fiesta,
-        map: map
-    });
-}
 
 // alert_markup
 function alert_markup(alert_type, msg) {
