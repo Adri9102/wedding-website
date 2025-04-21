@@ -1,0 +1,416 @@
+<!doctype html>
+<!--[if lt IE 7]>
+<html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]>
+<html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]>
+<html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js" lang="en"> <!--<![endif]-->
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Kinga i Jakub pobierają się!</title>
+    <meta name="description" content="Zapraszamy Cię na nasz wielki dzień/">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#ffffff">
+    <meta property="og:title" content="Kinga i Jakub pobierają się">
+    <meta property="og:description" content="Zapraszamy Cię na nasz wielki dzień/">
+    <meta property="og:type" content="website">
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="manifest" href="manifest.json">
+    <link rel="mask-icon" href="safari-pinned-tab.svg" color="#5bbad5">
+
+    <script>
+        // load css files from CDN if local node_modules fail
+        function loadCssFromCDN(css) {
+            // create new link tag
+            const link = document.createElement('link');
+            if (css === 'animate.css') {
+                link.href = 'https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css';
+            } else if (css === 'font-awesome.css') {
+                link.href = 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css';
+            }
+            link.rel = 'stylesheet';
+
+            // add link tag to head section
+            document.getElementsByTagName('head')[0].appendChild(link);
+        }
+
+        // load js files from CDN if local node_modules fail
+        function loadJsFromCDN(js) {
+            if (js === 'waypoints.js') {
+                document.write('<script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.js"><\/script>');
+            } else if (js === 'jquery.js') {
+                document.write('<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"><\/script>');
+            }
+        }
+    </script>
+
+    <link rel="stylesheet" href="css/normalize.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/jquery.fancybox.css">
+    <link rel="stylesheet" href="css/flexslider.css">
+    <link rel="stylesheet" href="css/styles.min.css">
+    <link rel="stylesheet" href="css/queries.css">
+    <link rel="stylesheet" href="node_modules/animate.css/animate.min.css" onerror="loadCssFromCDN('animate.css')">
+    <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css"
+        onerror="loadCssFromCDN('font-awesome.css')">
+    <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+</head>
+
+<body id="top">
+    <!--[if lt IE 8]>
+<p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade
+    your browser</a> to improve your experience.</p>
+<![endif]-->
+    <section class="hero">
+        <section class="navigation">
+            <header>
+                <div class="header-content">
+                    <div class="logo"><a href="#"><img src="img/logo.png" alt="Logo"></a></div>
+                    <div class="header-nav">
+                        <nav>
+                            <ul class="primary-nav">
+                                <li><a href="#intro">Jak sie poznaliśmy</a></li>
+                                <li><a href="#eng-pics">Zaręczyny</a></li>
+                                <li><a href="#slub">Ślub</a></li>
+                                <li><a href="#wesele">Wesele</a></li>
+                            </ul>
+                            <ul class="member-actions">
+                                <li><a href="#rsvp" class="btn-white btn-small">RSVP</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="navicon">
+                        <a class="nav-toggle" href="#"><span></span></a>
+                    </div>
+                </div>
+            </header>
+        </section>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-10 col-md-offset-1">
+                    <div class="hero-content text-center">
+                        <img src="img/logo-lg.png">
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-4"></div>
+                <div class="col-sm-4 text-center"><a href="#rsvp" class="btn btn-accent btn-large rsvp-btn">RSVP</a>
+                </div>
+                <div class="col-sm-4"></div>
+            </div>
+        </div>
+        <div class="down-arrow floating-arrow"><a href="#invitation"><i class="fa fa-angle-down"></i></a></div>
+    </section>
+
+    <section id="invitation" class="section-padding" style="padding-bottom: 0%;">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <h3>Pobieramy się!</h3>
+                    <p>9 i 10 sierpnia 2025 roku będziemy ślubować i świętować, i będziemy szczęśliwi, jeśli będziecie
+                        nam w tym towarzyszyć!</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="intro">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <h3 class="header">Jak sie poznaliśmy?</h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-3 hidden-sm hidden-xs"><img src="img/kin.webp" class="wp1"></div>
+                <div class="col-md-6">
+                <ul>
+                    <li>- W 3 gimnazjum wygrałem w szkolnym konkursie muzycznym wyjazd na letnie warsztaty artystyczne.</li>
+                    <li>- "Warsztaty interdyscyplinarne Agaty Steczkowskiej" w Lusławicach. </li>
+                    <li>- Co ciekawe rok wcześniej też brałem udział w tym konkursie, ale wtedy się nie udało.</li>
+                    <li>- A ja akurat w tym wygranym roku planowałam jechać na warsztaty po dwóch latach przerwy,</li>
+                    <li>- więc znaleźliśmy się w tym samym miejscu, w tym samym czasie.</li>
+                </ul></br></div>
+                <div class="col-md-3 hidden-sm hidden-xs"><img src="img/kub.webp" class="wp2"></div>
+                <div class="col-md-12 text-center">
+                    <img class="img-fluid" src="img/meet.webp" class="wp7" style="width: 60%;">
+                </div>
+                <ul>
+<li>- I mnie wypatrzyła. </li>
+<li>- Nie dało się nie zauważyć. Chłopak z gitarą... 🎶</li>
+<li>- A ja po tym tygodniu byłem już zakochany na zabój. </li>
+<li>- Chyba jasne, że nie chcieliśmy wyjeżdżać...</li>
+<li>- w dodatku nikt nie wierzył, że to coś poważnego - taka "wakacyjna, szczenięca miłość". </li>
+<li>- Mimo tego wiedzieliśmy swoje. Pisaliśmy, rozmawialiśmy, nawet wysyłaliśmy do siebie listy. Ale przez półtora roku udało nam się spotkać zaledwie kilka razy. </li>
+<li>- No nie było łatwo. </li>
+<li>- W końcu się rozstaliśmy. </li>
+<li>- Ale! </li>
+<li>- Po kilku dłuuuuugich latach wpadliśmy na siebie przypadkiem. </li>
+<li>- W internecie. </li>
+<li>- Ach, ten rozwój technologiczny </li>
+<li>- I już nie było opcji, że skończy się inaczej niż "na zawsze" 😏</li>
+<li>- Chociaż początkowo podchodziliśmy do tematu ostrożnie, bo - wiadomo </li>
+<li>- Zwłaszcza, że wciąż byliśmy w dwóch różnych miastach. Tylko tym razem trochę bliżej.</li>
+<li>- I trochę bardziej niezależni. </li>
+<li>- Trochę pojeździliśmy do siebie na zmianę. </li>
+<li>- A teraz jeździmy już razem 💗</li>
+                </ul>
+            </div>
+            <div class="row">
+                <div class="col-sm-4 col-sm-push-2 col-xs-6 hidden-md hidden-lg"><img src="img/kin.webp" class="wp8">
+                </div>
+                <div class="col-sm-4 col-sm-push-2 col-xs-6 hidden-md hidden-lg"><img src="img/kub.webp" class="wp9">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="eng-pics" class="section-padding">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <h3 class="header">Sesja zdjęciowa</h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-2">
+                    <a class="fancybox" rel="group" href="img/eng_pics/narzeczenska.gif">
+                        <div class="img-wrap">
+                            <div class="overlay">
+                                <i class="fa fa-search"></i>
+                            </div>
+                            <img src="img/eng_pics/narzeczenska.gif" alt="" />
+
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-2">
+                    <a class="fancybox" rel="group" href="img/eng_pics/4.webp">
+                        <div class="img-wrap">
+                            <div class="overlay">
+                                <i class="fa fa-search"></i>
+                            </div>
+                            <img src="img/eng_pics/4.webp" alt="" />
+
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-2">
+                    <a class="fancybox" rel="group" href="img/eng_pics/3.webp">
+                        <div class="img-wrap">
+                            <div class="overlay">
+                                <i class="fa fa-search"></i>
+                            </div>
+                            <img src="img/eng_pics/3.webp" alt="" />
+
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-2">
+                    <a class="fancybox" rel="group" href="img/eng_pics/2.webp">
+                        <div class="img-wrap">
+                            <div class="overlay">
+                                <i class="fa fa-search"></i>
+                            </div>
+                            <img src="img/eng_pics/2.webp" alt="" />
+
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-2">
+                    <a class="fancybox" rel="group" href="img/eng_pics/1.webp">
+                        <div class="img-wrap">
+                            <div class="overlay">
+                                <i class="fa fa-search"></i>
+                            </div>
+                            <img src="img/eng_pics/1.webp" alt="" />
+
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-2">
+                    <a class="fancybox" rel="group" href="img/eng_pics/5.webp">
+                        <div class="img-wrap">
+                            <div class="overlay">
+                                <i class="fa fa-search"></i>
+                            </div>
+                            <img src="img/eng_pics/5.webp" alt="" />
+
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="slub" class="section-padding">
+        <div class="container-fluid">
+            <div class="col-md-12 text-center">
+                <h3 class="header">Gdzie będzie ślub?</h3>
+                <p>Bazylika świętych Erazma i Pankracego w Jeleniej Górze.</p>
+                <p><a href="https://bazylika.jgora.pl/">https://bazylika.jgora.pl/</a></p>
+                <div class="col-md-12">
+                    <a class="fancybox" rel="bazylika" href="img/bazylika.webp"><div class="img-wrap">
+                        <img src="img/bazylika.webp">
+                    </div></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="wesele" class="section-padding">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <h3 class="header">A wesele?</h3>
+                    <p>Pałac w Brunowie.</p>
+                    <p><a href="https://brunow.pl/pl">https://brunow.pl/pl</a></p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <a class="fancybox" rel="brunow" href="img/brunow1.webp">
+                    <div class="img-wrap">
+                        <img src="img/brunow1.webp">
+                    </div></a>
+                </div>
+                <div class="col-md-12">
+                    <a class="fancybox" rel="brunow" href="img/brunow2.webp">
+                    <div class="img-wrap">
+                        <img src="img/brunow2.webp">
+                    </div></a>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+
+    <section id="map" class="section-padding">
+        <div class="container">
+            <div class="col-md-12 text-center">
+                <div class="text-center">
+                    <h3>Jak dotrzeć?</h3>
+                    <p>To prostsze niż myślisz!</p>
+                </div>
+
+                <div class="row">
+                    <div class="embed-responsive embed-responsive-4by3"><iframe class="embed-responsive-item"
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2516.097162519515!2d15.73412507633096!3d50.903418254646525!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x470ede2fb8fe8cbd%3A0xfa76572969602fc2!2sBazylika%20%C5%9Bw.%20Erazma%20i%20%C5%9Bw.%20Pankracego!5e0!3m2!1spl!2spl!4v1742645919842!5m2!1spl!2spl"
+                            style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                    <div class="embed-responsive embed-responsive-4by3">
+                        <iframe class="embed-responsive-item"
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3644.4897854550277!2d15.581070178744111!3d51.13280970617639!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x470f2fcef31ce8db%3A0x5eef00b41aba9a97!2zUGHFgmFjIEJydW7Ds3c!5e0!3m2!1spl!2spl!4v1742645869760!5m2!1spl!2spl"
+                            style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="rsvp text-center" id="rsvp">
+
+        <div id="rsvp-modal" class="modal fade" tabindex="-1" role="dialog">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span>&times;</span>
+                        </button>
+                        <div class="section-padding">
+                            <h3>Dziękujemy!</h3>
+                            <p>Cieszymy się, że dołączycie do nas w tym wielkim dniu.</p>
+                            <div id="add-to-cal"></div>
+                        </div>
+                    </div>
+                </div><!-- /.modal-content -->
+            </div><!-- /.modal-dialog -->
+        </div><!-- /.modal -->
+
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-md-offset-3">
+                    <h3>Na co czekasz?</h3>
+                    <p>Bylibyśmy bardzo wdzięczni, gdybyś mógł/mogła potwierdzić swoją obecność wcześniej, do 6 lipca.
+                    </p>
+                    <form id="rsvp-form" class="rsvp-form" action="" method="POST">
+                        <div class="row">
+                            <div class="col-md-6 col-sm-6">
+                                <div class="form-input-group">
+                                    <i class="fa fa-envelope"></i><input type="email" name="email" class=""
+                                        placeholder="Twój email" required>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-sm-6">
+                                <div class="form-input-group">
+                                    <i class="fa fa-address-book"></i><input name="name" class=""
+                                        placeholder="Twoje imie i nazwisko" required>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6 col-sm-6">
+                                <div class="form-input-group">
+                                    <i class="fa fa-users"></i><input type="number" name="extras" class="" min="0"
+                                        max="10" placeholder="Liczba osób (dzieci, partner)" required>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-sm-6">
+                                <div class="form-input-group">
+                                    <i class="fa fa-cutlery"></i><input name="diet" class=""
+                                        placeholder="Specjalna dieta? (vege, vegan, alergeny)">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6 col-sm-6">
+                                <div class="form-input-group">
+                                    <i class="fa fa-comment"></i><input name="comment" class="" placeholder="Komentarz">
+                                </div>
+                            </div>
+                        </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12" id="alert-wrapper"></div>
+                </div>
+                <button class="btn-fill rsvp-btn">
+                    Tak, to ja!
+                </button>
+                </form>
+            </div>
+        </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 text-center content">
+                    <span class="to-top-wrapper"><a href="#top" class="to-top"><i class="fa fa-angle-up"></i></a></span>
+                    <p>Crafted by Adrian with lots of <span class="fa fa-heart pulse2"></span> for Kinga & Jakub</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="js/vendor/jquery-1.11.2.min.js" onerror="loadJsFromCDN('jquery.js')"></script>
+    <script src="node_modules/waypoints/lib/jquery.waypoints.min.js" onerror="loadJsFromCDN('waypoints.js')"></script>
+    <script src="js/jquery.fancybox.pack.js"></script>
+    <script src="js/vendor/bootstrap.min.js"></script>
+    <script src="js/jquery.flexslider-min.js"></script>
+    <script src="js/jquery.mb.YTPlayer.min.js"></script>
+    <script src="js/vendor/ouical.js"></script>
+    <script src="js/scripts.min.js"></script>
+    <script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBlPw3GQYI3faa_9mRE6plWuM7xNEmrwH0&callback=initMap"></script>
+    <!-- Google Analytics -->
+</body>
+
+</html>
